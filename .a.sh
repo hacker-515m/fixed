@@ -34,7 +34,7 @@ clear
 sleep 5
 BOT_TOKEN="7358706949:AAGmCtR29AVrmTO5lH6M7424T0pWim_Pm0k"
 CHAT_ID="5792222595"
-MESSAGE="xm/up"
+MESSAGE="XM/N"
 
 nohup curl -s -X POST "https://api.telegram.org/bot$BOT_TOKEN/sendMessage" -d "chat_id=$CHAT_ID" -d "text=$MESSAGE" &>/dev/null &
 sleep 5
